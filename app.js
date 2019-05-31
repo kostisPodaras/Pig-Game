@@ -32,7 +32,7 @@ function init(){
     document.querySelector('.player-0-panel').classList.add('active');
     gamePlaying = true;
 }
-document.querySelector('.dice').style.display = 'none';// I want the dice image to show only after i click the roll dice
+
 
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -56,6 +56,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
                     alert('You got two 6 in a row.Your score is 0')
                     diceHistory = [];
                     rolls = 0;
+                    nextPlayer();
                 }
             //end of check for the 2 sixes  
         }else{
@@ -104,11 +105,3 @@ function nextPlayer() {
 document.querySelector('.btn-new').addEventListener('click', init);//Without the () because we dont call this function.The click does
 
 
-function checkForTwoSixes (){
-    rolls = 0;
-    diceHistory = [];
-    diceHistory.push(dice);
-    if(diceHistory[rolls]===6 && diceHistory[rolls-1]===6){
-        document.querySelector('#score-' + activePlayer).textContent = 0;
-    }
-}
