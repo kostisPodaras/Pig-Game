@@ -6,3 +6,5 @@ GAME RULES:
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 -A player looses his ENTIRE score when he rolls two 6s in a row. After that is the next players turn
+
+-Updated the game where you can put your willing score for the win. If you do not, the default is 100
